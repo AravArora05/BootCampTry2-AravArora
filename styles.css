@@ -36,10 +36,13 @@ body {
 
 }
 
+
+
 .name {
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 10px;
+    animation: rotateName 2s ease-in-out forwards;
 }
 
 .major, .year, .passion, .location {
@@ -75,5 +78,15 @@ body {
     100% {
         opacity: 1;
         transform: scale(1);
+    }
+}
+
+
+@keyframes rotateName {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }
