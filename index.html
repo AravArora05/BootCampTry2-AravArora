@@ -1,8 +1,37 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Info Card</title>
+</head>
+<body>
+    <div class="card" onclick="toggleDetails(this)">
+        <h2 class="name">Arav Arora</h2>
+        <p class="major">Major: Computer Science</p>
+        <p class="year">Year: Second Year</p>
+        <p class="passion">Passionate About: Helping with GOALS Soccer every weekend</p>
+        <p class="description">
+            Every weekend, I have the privilege of working with GOALS Soccer, where I help a group of disabled kids through various soccer drills like dribbling and much more. This experience has been incredibly rewarding, allowing me to see the joy and progress in these kids as they engage in the sport.
+        </p>
+        <div class="hidden-details">
+            <p>Drills Include:</p>
+            <ul>
+                <li>Dribbling</li>
+                <li>Passing</li>
+                <li>Shooting</li>
+                <li>Small-sided games</li>
+            </ul>
+            <p>The smiles on their faces after each session make all the effort worthwhile.</p>
+        </div>
+        <p class="location">From: Littleton, Massachusetts</p>
+    </div>
 
-<html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-<!-- Your HTML Here -->
+    <script>
+        function toggleDetails(card) {
+            card.classList.toggle('active');
+        }
+    </script>
+</body>
 </html>

@@ -1,3 +1,26 @@
-/* Your Styles Here */
-body{
+body {
+    font-family: Arial, sans-serif;
+    background-color: #003057;
+   
 }
+
+.card {
+    background-color: #B3A369;
+    color: #003057; 
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.hidden-details {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.card.active .hidden-details {
+    display: block;
+}
+
