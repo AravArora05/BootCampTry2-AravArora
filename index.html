@@ -14,7 +14,7 @@
         <p class="year">Year: Second Year</p>
         <p class="passion">Passionate About: Helping with GOALS Soccer every weekend</p>
         <p class="description">
-            Every weekend, I have the privilege of working with GOALS Soccer, where I help a group of  kids through various soccer drills like dribbling and much more. This experience has been incredibly rewarding, allowing me to see the joy and progress in these kids as they engage in the sport.GOALS Soccer is connected through the U.S.A. Best Buddies program,  
+            Every weekend, I have the privilege of working with GOALS Soccer, where I help a group of kids through various soccer drills like dribbling and much more. This experience has been incredibly rewarding, allowing me to see the joy and progress in these kids as they engage in the sport. GOALS Soccer is connected through the U.S.A. Best Buddies program. I can't wait to go back and help with the program this upcoming Spring. It'll be great to be surrounded by the incredible kids again!
         </p>
         <div class="hidden-details">
             <p>Drills Include:</p>
@@ -31,7 +31,8 @@
 
     <script>
         function toggleDetails(card) {
-            card.classList.toggle('active');
+            const details = card.querySelector('.hidden-details');
+            details.style.display = details.style.display === 'block' ? 'none' : 'block';
         }
     </script>
 </body>
